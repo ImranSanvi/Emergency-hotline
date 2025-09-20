@@ -16,7 +16,7 @@
     <title>Emergency Hotline</title>
 </head>
 <body>
-    <div class="navbar flex justify-between items-center px-[60px] py-9">
+    <div class="navbar flex justify-between items-center px-14 py-9">
         <div class="flex items-center w-[50px] h-[50px] gap-3">
             <img src="./assets/logo.png" alt="">
             <h1 class="text-[#006747] font-extrabold">Emergency <br/>Service</h1>
@@ -43,9 +43,9 @@
         <p class="text-[#FFFFFF] font-semibold text-[20px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </div>
 
-    <div class="card-container bg-[#f5fff6] p-14 flex ">
+    <div class="card-container bg-[#f5fff6] p-14 flex gap-6">
         
-        <div class="cards grid grid-cols-3 gap-6">
+        <div class=" w-8/10 cards grid grid-cols-3 gap-6">
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
@@ -237,8 +237,13 @@
             </div>
         </div>
 
-        <div class="history">
-
+        <div class="history w-2/10 flex justify-between px-3 py-5 bg-white">
+            <div>
+                <span class="flex items-center"><i class="fa-regular fa-clock"></i><p>call history</p></span>
+            </div>
+            <div>
+                <button class="text-white bg-[#00a63e] rounded-full px-2 py-1">Clear</button>
+            </div>
         </div>
     </div>
 
