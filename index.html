@@ -15,19 +15,19 @@
 
     <title>Emergency Hotline</title>
 </head>
-<body>
-    <div class="navbar flex justify-between items-center px-14 py-9">
+<body class="">
+    <div class="navbar flex flex-col gap-6 sm:flex-row justify-between items-center px-14 py-9">
         <div class="flex items-center w-[50px] h-[50px] gap-3">
             <img src="./assets/logo.png" alt="">
             <h1 class="text-[#006747] font-extrabold">Emergency <br/>Service</h1>
         </div>
         <div class="flex justify-between items-center gap-3">
             <div class="bg-[#41ff6b1a] w-[123px] h-[52px] rounded-3xl flex justify-center items-center gap-2">
-                <p class="text-[16px] font-extrabold">0</p>
+                <p id="hear-count" class="text-[16px] font-extrabold">0</p>
                 <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
             </div>
             <div class="bg-[#41ff6b1a] w-[123px] h-[52px] rounded-3xl flex justify-center items-center gap-2">
-                <p class="text-[16px] font-extrabold">0</p>
+                <p class="text-[16px] font-extrabold">100</p>
                 <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="">
             </div>
             <button class="bg-[#00a63e]  w-[123px] h-[52px] rounded-3xl flex justify-center items-center gap-2">
@@ -39,17 +39,17 @@
 
     <div class=" w-full bg-[linear-gradient(to_right,#013223,#006747_50%,#013223_100%)] text-center p-5">
         <img class="w-[92px] h-[92px] mx-auto" src="./assets/logo-dark.png" alt="">
-        <h1 class="text-[#FFFFFF] font-bold text-[40px]">Emergency Service Directory</h1>
-        <p class="text-[#FFFFFF] font-semibold text-[20px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        <h1 class="text-white font-bold sm:text-[40px]">Emergency Service Directory</h1>
+        <p class="text-white font-semibold sm:text-[20px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </div>
 
-    <div class="card-container bg-[#f5fff6] p-14 flex gap-6">
+    <div class="card-container bg-[#f5fff6] p-14 flex flex-col gap-6 sm:flex-row">
         
-        <div class=" w-8/10 cards grid grid-cols-3 gap-6">
+        <div class="w-full sm:w-8/10 cards grid grid-cols-1 gap-6 sm:p-10 sm:grid-cols-3">
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">National Emergency Number</h1>
@@ -71,7 +71,7 @@
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/police.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">Police Helpline Number</h1>
@@ -92,7 +92,7 @@
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/fire-service.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">Fire Service Number</h1>
@@ -113,7 +113,7 @@
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/ambulance.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">Ambulance Service</h1>
@@ -134,7 +134,7 @@
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">Women & Child Helpline</h1>
@@ -155,7 +155,7 @@
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">Anti-Corruption Helpline</h1>
@@ -176,7 +176,7 @@
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">Electricity Helpline</h1>
@@ -197,7 +197,7 @@
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">Brac Helpline</h1>
@@ -218,7 +218,7 @@
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
-                    <i class="fa-regular fa-heart"></i>
+                    <span class="heart"><i class="fa-regular fa-heart"></i></span>
                 </div>
                 <div class="mb-2">
                     <h1 class="font-bold text-[24px]">Bangladesh Railway Helpline </h1>
@@ -237,7 +237,7 @@
             </div>
         </div>
 
-        <div class="history w-2/10 flex justify-between px-3 py-5 bg-white">
+        <div class="history sm:w-1/5 w-full flex justify-between  sm:px-3 sm:py-5  bg-white ">
             <div>
                 <span class="flex items-center"><i class="fa-regular fa-clock"></i><p>call history</p></span>
             </div>
@@ -246,6 +246,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 
 </body>
 </html>
