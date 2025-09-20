@@ -45,7 +45,7 @@
 
     <div class="card-container bg-[#f5fff6] py-20 px-14 flex flex-col gap-6 sm:flex-row">
         
-        <div class="w-full sm:w-8/10 cards grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div class="w-full sm:w-3/4 cards grid grid-cols-1 gap-6 sm:grid-cols-3">
             <div class="card bg-white p-8">
                 <div class="flex justify-between items-center mb-4">
                     <img class="w-[60px] h-[60px]" src="./assets/emergency.png" alt="">
@@ -237,12 +237,17 @@
             </div>
         </div>
 
-        <div class="history sm:w-1/5 w-full flex justify-between  sm:px-3 sm:py-5  bg-white ">
-            <div>
-                <span class="flex items-center"><i class="fa-regular fa-clock"></i><p>call history</p></span>
+        <div class="history bg-white sm:w-1/4 w-full">
+            <div class="flex justify-between  sm:px-3 sm:py-5">
+                <div>
+                    <span class="flex items-center"><i class="fa-regular fa-clock"></i><p>call history</p></span>
+                </div>
+                <div>
+                    <button class="text-white bg-[#00a63e] rounded-full px-2 py-1">Clear</button>
+                </div>
             </div>
-            <div>
-                <button class="text-white bg-[#00a63e] rounded-full px-2 py-1">Clear</button>
+             <div id="call-history-container">
+
             </div>
         </div>
     </div>

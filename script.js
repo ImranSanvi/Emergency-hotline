@@ -1,5 +1,5 @@
 
-callHistory = [];
+
 
 function numberOfHeart(){
     const available = document.getElementById('hear-count');
@@ -53,6 +53,7 @@ for(let copy of copyBtn){
 
 
 // call Button clicked
+const callHistory = [];
 const calls = document.getElementsByClassName("call-btn");
 for(let call of calls){
     call.addEventListener('click', function(){
@@ -63,8 +64,33 @@ for(let call of calls){
             const serviceNumber = card.querySelector(".service-number").innerText;
 
             alert(serviceName + "\n" + serviceNumber);
+            const data = {
+                name: serviceName,
+                number: serviceNumber,
+                date :new Date().toLocaleTimeString()
+            }
+            callHistory.push(data);
+
+            const callHistoryContainer = document.getElementById("call-history-container");
+            callHistoryContainer.innerHTML = "";
+            for(const entry of callHistory){
+                const Div = document.createElement('div');
+                Div.innerHTML = `
+                    <div class="flex justify-between items-center h-[72px] shadow-md rounded-2xl bg-gray-100 mt-6 mx-4 p-4">
+                        <div>
+                            <h1 class="font-bold">${entry.name}</h1>
+                            <p>${entry.number}</p>
+                        </div>
+                            <p>${entry.date}</p>
+                        </div>
+                        </div>
+                    </div>
+                `
+                callHistoryContainer.appendChild(Div);
+            }
         }
     })
 }
+
 
 
