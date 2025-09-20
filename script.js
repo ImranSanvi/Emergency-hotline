@@ -92,5 +92,11 @@ for(let call of calls){
     })
 }
 
+document.getElementById("clear-btn").addEventListener('click', function(){
+    const callHistoryContainer = document.getElementById("call-history-container");
+    callHistoryContainer.innerHTML = "";
+    callHistory.length = 0;
+})
+
 
 
